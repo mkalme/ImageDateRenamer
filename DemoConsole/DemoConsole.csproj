@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <TieredCompilation>true</TieredCompilation>
+    <TieredCompilationQuickJit>false</TieredCompilationQuickJit>
+    <TieredCompilationQuickJitForLoops>false</TieredCompilationQuickJitForLoops>
+    <RetainVMGarbageCollection>true</RetainVMGarbageCollection>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ImageDateRenamer\ImageDateRenamer.csproj" />
+    <ProjectReference Include="..\ImageDuplicateFinder\ImageDuplicateFinder.csproj" />
+    <ProjectReference Include="..\VideoDuplicateFinder\VideoDuplicateFinder.csproj" />
+  </ItemGroup>
+
+</Project>
